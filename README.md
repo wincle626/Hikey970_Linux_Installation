@@ -78,4 +78,10 @@ Ubuntu 18.04
 
 2. Bluetooth Driver Halts
 
-3. Unallocated space within OS partition
+3. Unallocated space within OS partition and small rootfs partition
+
+# Sovled Issues
+
+1. Use resize2fs command to expand the full partition size.
+
+2. Install GParted (sudo apt install gparted) and resize the rootfs parition
