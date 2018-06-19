@@ -1,10 +1,6 @@
 # Host OS
 Ubuntu 18.04
 
-# Hikey 970 Files for Linux
-
-    https://drive.google.com/open?id=1ncOImtDXss9f3ZT9-skg992xaQx5mhLd
-
 # Hikey 970 Build Linux Kernel
 
 1. Download kernel source file from:
