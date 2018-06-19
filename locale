@@ -1,0 +1,2 @@
+sudo dpkg-reconfigure locales
+sudo locale-gen
