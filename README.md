@@ -74,7 +74,7 @@ Ubuntu 18.04
 
 # Known Issues
 
-1. HDMI Display Overscales
+1. HDMI Display Overscan
 
 2. Bluetooth Driver Halts
 
@@ -85,3 +85,5 @@ Ubuntu 18.04
 1. Use resize2fs command to expand the full partition size.
 
 2. Install GParted (sudo apt install gparted) and resize the rootfs parition
+
+3. It turns out the display overscan is because of the compatibility of monitor with this board. It is solved by using another monitor. 
