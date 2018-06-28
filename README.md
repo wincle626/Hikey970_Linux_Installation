@@ -86,4 +86,4 @@ Ubuntu 18.04
 
 2. Install GParted (sudo apt install gparted) and resize the rootfs parition
 
-3. It turns out the display overscan is because of the compatibility of monitor with this board. It is solved by using another monitor. 
+3. It turns out the display overscan is caused by the compatibility of monitor with this board. It is solved by using another monitor. 
