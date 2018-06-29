@@ -82,6 +82,8 @@ Ubuntu 18.04
 
 4. No access to GPS yet
 
+5. No access to AI core yet
+
 # Sovled Issues
 
 1. Use resize2fs command to expand the full partition size. Install GParted (sudo apt install gparted) and resize the rootfs parition
