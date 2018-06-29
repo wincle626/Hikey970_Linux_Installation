@@ -76,9 +76,9 @@ Ubuntu 18.04
 
 1. HDMI Display Overscan
 
-2. Bluetooth Driver Halts because the invalid definition in DeviceTree
+2. Unallocated space within OS partition and small rootfs partition
 
-3. Unallocated space within OS partition and small rootfs partition
+3. Bluetooth Driver Halts because the invalid definition in DeviceTree
 
 4. No access to GPS yet
 
