@@ -76,14 +76,14 @@ Ubuntu 18.04
 
 1. HDMI Display Overscan
 
-2. Bluetooth Driver Halts
+2. Bluetooth Driver Halts because the invalid definition in DeviceTree
 
 3. Unallocated space within OS partition and small rootfs partition
 
+4. No access to GPS yet
+
 # Sovled Issues
 
-1. Use resize2fs command to expand the full partition size.
+1. Use resize2fs command to expand the full partition size. Install GParted (sudo apt install gparted) and resize the rootfs parition
 
-2. Install GParted (sudo apt install gparted) and resize the rootfs parition
-
-3. It turns out the display overscan is caused by the compatibility of monitor with this board. It is solved by using another monitor. 
+2. It turns out the display overscan is caused by the compatibility of monitor with this board. It is solved by using another monitor. 
