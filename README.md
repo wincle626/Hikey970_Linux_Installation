@@ -84,6 +84,8 @@ Ubuntu 18.04
 
 5. No access to AI core yet
 
+6. No Mali G72 userspace binary driver, hence no OpenCL support at the moment
+
 # Sovled Issues
 
 1. Use resize2fs command to expand the full partition size. Install GParted (sudo apt install gparted) and resize the rootfs parition
