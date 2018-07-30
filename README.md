@@ -12,7 +12,7 @@ Ubuntu 18.04
 
 3. Go to the source folder and set up the enviroment variable for cross compie and buld kernel .config:
 
-    export CROSS_COMPILE=aaarch64-linux-gnu-
+    export CROSS_COMPILE=aarch64-linux-gnu-
     
     make ARCH=arm64 hikey970_defconfig
     
