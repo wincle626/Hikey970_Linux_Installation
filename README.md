@@ -30,7 +30,7 @@ Ubuntu 18.04
     
 # Hikey 970 Build Sparse Rootfs Image
 
-1. Unzip hikey970-ubuntu-image-1.0.zip and go to the unzipped folder
+1. git clone https://github.com/mengzhuo/hikey970-ubuntu-image and enter the folder
 
 2. Replace the Image file with compiled kernel image in folder rootfs/boot
 
