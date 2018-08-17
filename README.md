@@ -1,6 +1,12 @@
 # Host OS
 Ubuntu 18.04
 
+# Pre-Built Linux Images
+
+Please note that LeMaker has provided pre-built image for Hikey970. Please follow the link to download tar file and follow the installation guide:
+
+http://www.lemaker.org/product-hikey970-resource.html
+
 # Hikey 970 Build Linux Kernel
 
 1. Download kernel source file from:
