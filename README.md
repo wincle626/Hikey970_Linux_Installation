@@ -7,7 +7,7 @@ Please note that LeMaker has provided pre-built image for Hikey970. Please follo
 
 http://www.lemaker.org/product-hikey970-resource.html
 
-# Hikey 970 Build Linux Kernel
+# Hikey 970 Build Linux Kernel - only for those who want to customize the kernel
 
 1. Download kernel source file from:
 
