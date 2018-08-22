@@ -59,7 +59,7 @@ http://www.lemaker.org/product-hikey970-resource.html
     
 4. Connect the cable to setup Type-C port. Power on the board.
 
-5. I used the ubuntu_bionic.hikey971.v1.0 version, so just replace the rootfs.sparse.img file with the compiled one above and run update_hikey970.sh in the folder and wait for it finishes.
+5. I used the ubuntu_bionic.hikey971.v1.0 version, so just replace the rootfs.sparse.img file with the compiled one above and run update_hikey970.sh in the folder and wait for it finishes. (PS: use 64gtoendprm_ptable.img instead of prm_patable.img in the script to avoid the fractional partition. In this case, no need to use resize2fs command to extend the rootfs partition any more.)
 
 6. Once installed, power off the board and change the four keys back to: 
 
@@ -94,6 +94,6 @@ http://www.lemaker.org/product-hikey970-resource.html
 
 # Sovled Issues
 
-1. Use resize2fs command to expand the full partition size. Install GParted (sudo apt install gparted) and resize the rootfs parition
+1. Use resize2fs command to expand the full partition size. Install GParted (sudo apt install gparted) and resize the rootfs parition.
 
 2. It turns out the display overscan is caused by the compatibility of monitor with this board. It is solved by using another monitor. 
