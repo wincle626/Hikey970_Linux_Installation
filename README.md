@@ -49,7 +49,7 @@ http://www.lemaker.org/product-hikey970-resource.html
 
 # Hikey 970 Debian Linux Installation
 
-1. Currently there are two version at the moment, hikey970_debin_0531_support_uvc or ubuntu_bionic.hikey971.v1.0. I used the ubuntu_bionic.hikey971.v1.0. 
+1. Currently there are two version at the moment, hikey970_debin_0531_support_uvc or ubuntu_bionic.hikey971.v1.0. I used the [ubuntu_bionic.hikey971.v1.0](https://github.com/mengzhuo/hikey970-ubuntu-image/releases/download/v1.0/ubuntu_bionic.hikey971.v1.0.sparse.img.tar.gz). 
 
 2. If host is Linux, install fastboot by "sudo apt install fastboot". If host is windows, install adb tool using the adb-setup-1.3.exe in download folder, which will install the fastboot to C:\abd and remember to add this path to system PATH variable. If you don't know how to do that, just Google :)
 
