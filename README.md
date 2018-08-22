@@ -76,7 +76,7 @@ http://www.lemaker.org/product-hikey970-resource.html
 11. Set the host ip address as 192.168.1.1 and share the internet through it and then install the xfce4:
     sudo apt update && sudo apt install xfce4
 
-12. Now it is time to enjoy the debian on Hikey970. E.g. ssh -X hi@192.168.1.97. Notice, there is no display manager yet. You need to install either xdm/gdm/lightdm etc. to display the desktop at startup. (Some additional packages: autoconf automake inltool pkg-config glib2.0 gtk+2.0 dbus-glib2.0 xfconf gio2.0 libglade2.0 perl libwnck-3-dev gudev-1.0)
+12. Now it is time to enjoy the debian on Hikey970. E.g. ssh -X hi@192.168.1.97. Notice, there is no display manager yet. You need to install either xdm/gdm/lightdm etc. to display the desktop at startup. (Some additional packages: autoconf automake intltool pkg-config glib2.0 gtk+2.0 dbus-glib2.0 xfconf gio2.0 libglade2.0 perl libwnck-3-dev gudev-1.0)
 
 # Known Issues
 
