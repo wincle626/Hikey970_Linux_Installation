@@ -101,6 +101,12 @@ http://www.lemaker.org/product-hikey970-resource.html
 2. It turns out the display overscan is caused by the compatibility of monitor with this board. It is solved by using another monitor. 
 
 7. Switching from Netplan to NetworkManager make it much better. Then you need to update the /etc/network/interface with following content:
+
+        auto lo
+        
+        iface lo inet loopback
+        
+        
         auto enp6s0
         
         iface enp6s0 inet static
@@ -114,3 +120,5 @@ http://www.lemaker.org/product-hikey970-resource.html
    And update the /etc/resolv.conf with following content:
    
         nameservers 192.168.1.1
+        
+   Then do "sudo ifdown enp6s0 && sudo ifup enp6s0". It should bring you the internet through the host as using the Netplan. 
