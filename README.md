@@ -92,10 +92,19 @@ http://www.lemaker.org/product-hikey970-resource.html
 
 6. No Mali G72 userspace binary driver, hence no OpenCL support at the moment
 
-7. If the board is fully connected with 2 usb (e.g. keyboard and mouse), 1 HDMI (e.g. monitor), 1 RJ45 (e.g. Ethernet) and 1 UART, it is likely the Ethernet will not work. It is an unknown reason that either caused by device driver/firmware or the hardware design. If remove everything except the RJ45, it will bring the Ethernet back. Then you can use the USB but not the HDMI as the board does not support hot plugin of HDMI. 
+7. If the board is fully connected with 2 usb (e.g. keyboard and mouse), 1 HDMI (e.g. monitor), 1 RJ45 (e.g. Ethernet) and 1 UART, there is a chance the Ethernet will not work. If remove everything except the RJ45, it will bring the Ethernet back. Then you can use the USB but not the HDMI as the board does not support hot plugin of HDMI. 
 
 # Sovled Issues
 
 1. Use resize2fs command to expand the full partition size. Install GParted (sudo apt install gparted) and resize the rootfs parition.
 
 2. It turns out the display overscan is caused by the compatibility of monitor with this board. It is solved by using another monitor. 
+
+7. Switching from Netplan to NetworkManager make it much better. Then you need to update the /etc/network/interface with following content:
+        auto enp6s0
+        iface enp6s0 inet static
+        address 192.168.1.97
+        netmask 255.255.255.0
+        gateway 192.168.1.97
+   And update the /etc/resolv.conf with following content:
+        nameservers 192.168.1.1
