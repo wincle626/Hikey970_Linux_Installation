@@ -100,7 +100,7 @@ http://www.lemaker.org/product-hikey970-resource.html
 
 2. It turns out the display overscan is caused by the compatibility of monitor with this board. It is solved by using another monitor. 
 
-7. Switching from Netplan to NetworkManager make it much better. Then you need to update the /etc/network/interface with following content:
+7. Switching from Netplan to NetworkManager make it slightly better. Then you need to update the /etc/network/interface with following content:
 
         auto lo
         
