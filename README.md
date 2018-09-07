@@ -102,9 +102,15 @@ http://www.lemaker.org/product-hikey970-resource.html
 
 7. Switching from Netplan to NetworkManager make it much better. Then you need to update the /etc/network/interface with following content:
         auto enp6s0
+        
         iface enp6s0 inet static
+        
         address 192.168.1.97
+        
         netmask 255.255.255.0
+        
         gateway 192.168.1.97
+        
    And update the /etc/resolv.conf with following content:
+   
         nameservers 192.168.1.1
