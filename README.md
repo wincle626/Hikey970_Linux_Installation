@@ -92,6 +92,8 @@ http://www.lemaker.org/product-hikey970-resource.html
 
 6. No Mali G72 userspace binary driver, hence no OpenCL support at the moment
 
+7. If the board is fully connected with 2*usb (e.g. keyboard and mouse), 1*HDMI (e.g. monitor), 1*RJ45 (e.g. Ethernet) and 1*UART, it is likely the Ethernet will not work. It is an unknown reason that either caused by device driver/firmware or the hardware design. If remove everything except the RJ45, it will bring the Ethernet back. Then you can use the USB but not the HDMI as the board does not support hot plugin of HDMI. 
+
 # Sovled Issues
 
 1. Use resize2fs command to expand the full partition size. Install GParted (sudo apt install gparted) and resize the rootfs parition.
