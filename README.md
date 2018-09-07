@@ -40,7 +40,7 @@ http://www.lemaker.org/product-hikey970-resource.html
 
 2. Replace the Image file with compiled kernel image in folder rootfs/boot
 
-3. Run the build.sh. 
+3. Run the build.sh. (might need "sudo apt-get install img2simg binfmt-support qemu qemu-user-static debootstrap")
 
 4. The sparse rootfs image file is generate in the new created build folder, e.g. ubuntu_bionic.hikey970.v1.0-6-g775823b.sparse.img
 
