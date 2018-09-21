@@ -109,9 +109,9 @@ And unloaded using rmmod command:
     
 Use lsmod command to check if they are loaded successfully. You can also use modprobe command to do steps 3 and 4.
     
-Now you can attach the serieal connection device to the USB port and access them through /dev/ttyUSB* (* is the a integer number). This method is also valid for other kernel modules.
+Now you can attach the serieal connection device to the USB port and access them through /dev/ttyUSB* (* is the an integer number). This method is also valid for other kernel modules.
 
-### PS: all the commands executed above are under superuser mode, so run sudo -s before doing them. There are some prerequisite packages, please refer to https://help.ubuntu.com/community/Kernel/Compile.
+#### PS: all the commands executed above are under superuser mode, so run sudo -s before doing them. There are some prerequisite packages, please refer to https://help.ubuntu.com/community/Kernel/Compile.
     
 
 # Known Issues
