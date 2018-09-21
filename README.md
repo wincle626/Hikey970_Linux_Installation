@@ -107,6 +107,8 @@ And unloaded using rmmod command:
     
     rmmod drivers/usb/serial/usbserial.ko
     
+Use lsmod command to check if they are loaded successfully. 
+    
 Now you can attach the serieal connection device to the USB port and access them through /dev/ttyUSB* (* is the a integer number). This method is also valid for other kernel modules.
 
 ### PS: all the commands executed above are under superuser mode, so run sudo -s before doing them. There are some prerequisite packages, please refer to https://help.ubuntu.com/community/Kernel/Compile.
