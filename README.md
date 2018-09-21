@@ -85,7 +85,7 @@ One of the drawback of this pre-compiled image is that some kernel modules are n
 
     cp -r #(you download folder)/hikey970-v4.9 /lib/modlues/$(uname -r)
 
-2. Go to the folder "/lib/modlues/$(uname -r)" and go through the step 1-4 in last section. By openning the graphical configure interface, navigate to : "Device Drivers -> USB Support -> USB Serial Converter Support" and select 'M'module "USB FTDI Single Port Serial Driver". Then choose exit and save the configuration.
+2. Go to the folder "/lib/modlues/$(uname -r)" and go through the step 1-4 in Hikey 970 Build Linux Kernel section. By openning the graphical configure interface, navigate to : "Device Drivers -> USB Support -> USB Serial Converter Support" and select 'M'module "USB FTDI Single Port Serial Driver". Then choose exit and save the configuration.
 
 3. Build the additional kernel module with
 
