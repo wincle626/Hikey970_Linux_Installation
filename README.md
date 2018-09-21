@@ -111,7 +111,7 @@ Use lsmod command to check if they are loaded successfully. You can also use mod
     
 Now you can attach the serieal connection device to the USB port and access them through /dev/ttyUSB* (* is the an integer number). This method is also valid for other kernel modules.
 
-#### PS: all the commands executed above are under superuser mode, so run sudo -s before doing them. There are some prerequisite packages, please refer to https://help.ubuntu.com/community/Kernel/Compile.
+#### PS: all the commands executed above are under superuser mode, so run sudo -s before doing them. There are some prerequisite packages, please refer to https://help.ubuntu.com/community/Kernel/Compile. And if you are also interested in building up your own custom kernel module, following this helloworld guide here: https://www.tldp.org/LDP/lkmpg/2.6/html/x181.html.
     
 
 # Known Issues
