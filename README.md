@@ -1,12 +1,6 @@
 # Host OS
 Ubuntu 18.04
 
-# Pre-Built Linux Images
-
-Please note that LeMaker has provided pre-built image for Hikey970. Please follow the link to download tar file and follow the installation guide:
-
-http://www.lemaker.org/product-hikey970-resource.html
-
 # Hikey 970 Build Linux Kernel - only for those who want to customize the kernel
 
 1. Download kernel source file from:
@@ -77,6 +71,46 @@ http://www.lemaker.org/product-hikey970-resource.html
     sudo apt update && sudo apt install xfce4
 
 12. Now it is time to enjoy the debian on Hikey970. E.g. ssh -X hi@192.168.1.97. Notice, there is no display manager yet. You need to install either xdm/gdm/lightdm etc. to display the desktop at startup. (Some additional packages: autoconf automake intltool pkg-config glib2.0 gtk+2.0 dbus-glib2.0 xfconf gio2.0 libglade2.0 perl libwnck-3-dev gudev-1.0)
+
+
+# Pre-Built Linux Images
+
+Please note that LeMaker has provided pre-built image for Hikey970. Please follow the link to download tar file and follow the installation guide:
+
+http://www.lemaker.org/product-hikey970-resource.html
+
+One of the drawback of this pre-compiled image is that some kernel modules are not reloaded at boot, for example the fdti_sio. In order to have those kernel modules after boot, you need to compile the kernel modules manually from the source. 
+
+1. Copy the source to the /lib/modules on the board and rename it according to the current linux kernel information:
+
+    cp -r #(you download folder)/hikey970-v4.9 /lib/modlues/$(uname -r)
+
+2. Go to the folder "/lib/modlues/$(uname -r)" and go through the step 1-4 in last section. By openning the graphical configure interface, navigate to : "Device Drivers -> USB Support -> USB Serial Converter Support" and select 'M'module "USB FTDI Single Port Serial Driver". Then choose exit and save the configuration.
+
+3. Build the additional kernel module with
+
+    make ARCH=arm64 M=drivers/usb/serial/
+    
+    make ARCH=arm64 modules
+    
+    make ARCH=arm64 modlues_install
+    
+4. You will see generated kernel module .ko files under drivers/usb/serial/ folder. Take the fdti_sio.ko for example, it can be loaded by insmod comamnd (need to load the module usbserial.ko first):
+
+    insmod drivers/usb/serial/usbserial.ko
+    
+    insmod drivers/usb/serial/fdti_sio.ko
+    
+And unloaded using rmmod command:
+    
+    rmmod drivers/usb/serial/fdti_sio.ko
+    
+    rmmod drivers/usb/serial/usbserial.ko
+    
+Now you can attach the serieal connection device to the USB port and access them through /dev/ttyUSB* (* is the a integer number). This method is also valid for other kernel modules.
+
+### PS: all the commands executed above are under superuser mode, so run sudo -s before doing them. There are some prerequisite packages, please refer to https://help.ubuntu.com/community/Kernel/Compile.
+    
 
 # Known Issues
 
