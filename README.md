@@ -79,7 +79,7 @@ Please note that LeMaker has provided pre-built image for Hikey970. Please follo
 
 http://www.lemaker.org/product-hikey970-resource.html
 
-One of the drawback of this pre-compiled image is that some kernel modules are not reloaded at boot, for example the fdti_sio. In order to have those kernel modules after boot, you need to compile the kernel modules manually from the source. 
+One of the drawback of this pre-compiled image is that some kernel modules are not preloaded at boot, for example the fdti_sio. In order to have those kernel modules after boot, you need to compile the kernel modules manually from the source. 
 
 1. Copy the source to the /lib/modules on the board and rename it according to the current linux kernel information:
 
