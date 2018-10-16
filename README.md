@@ -62,6 +62,7 @@ Ubuntu 18.04
 7. Pluging the Type-C UART cable to the board and power on it. The default user is 'hi' and password is 'hikey970'.
 
 8. Change the content of file /etc/netplan/01-dhcp.yaml as the file '01-dhcp.yaml' in the folder.
+#### PS: If you cannot make it work with netplan, just leave it. Connect the board to a router with internet connection and then the board is online by default DHCP. Install the ifupdown and enable it as the default network manager. By modifying the /etc/network/interfaces and /etc/resolv.conf, it can also the network configuration in old fashion. 
 
 9. Change the content of file /etc/apt/sources.list as the file 'sources.list' in the folder.
 
