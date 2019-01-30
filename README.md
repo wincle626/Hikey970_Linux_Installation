@@ -133,11 +133,11 @@ Now you can attach the serieal connection device to the USB port and access them
 
 # Sovled Issues
 
-1. Use resize2fs command to expand the full partition size. Install GParted (sudo apt install gparted) and resize the rootfs parition.
+1.Use resize2fs command to expand the full partition size. Install GParted (sudo apt install gparted) and resize the rootfs parition.
 
-2. It turns out the display overscan is caused by the compatibility of monitor with this board. It is solved by using another monitor. 
+2.It turns out the display overscan is caused by the compatibility of monitor with this board. It is solved by using another monitor. 
 
-6. The latest Lebian from Lemaker has delivered userspace binary driver for G72. The binary library is /usr/lib/aarch64-linux-gnu/libmali.so. By installing the pocl, two OpenCL platforms can be found on Hikey 970. (Notice that Mali-G72 does not support cl_khr_fp64. ) 
+6.The latest Lebian from Lemaker has delivered userspace binary driver for G72. The binary library is /usr/lib/aarch64-linux-gnu/libmali.so. By installing the pocl, two OpenCL platforms can be found on Hikey 970. (Notice that Mali-G72 does not support cl_khr_fp64. ) 
 
         ./clinfo
         Found 2 platform(s).
@@ -262,7 +262,7 @@ Now you can attach the serieal connection device to the USB port and access them
         device[0xcdbcaf0]: AVAILABLE: 1
         device[0xcdbcaf0]: COMPILER_AVAILABLE: 1
 
-7. Switching from Netplan to NetworkManager make it slightly better. Then you need to update the /etc/network/interface with following content:
+7.Switching from Netplan to NetworkManager make it slightly better. Then you need to update the /etc/network/interface with following content:
 
         auto lo
         
