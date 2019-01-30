@@ -137,7 +137,7 @@ Now you can attach the serieal connection device to the USB port and access them
 
 2. It turns out the display overscan is caused by the compatibility of monitor with this board. It is solved by using another monitor. 
 
-6. The latest Lebian from Lemaker has delivered userspace binary driver for G72. By installing the pocl, two OpenCL platforms can be found on Hikey 970. (Notice that G72 does not support cl_khr_fp64. ) 
+6. The latest Lebian from Lemaker has delivered userspace binary driver for G72. By installing the pocl, two OpenCL platforms can be found on Hikey 970. (Notice that Mali-G72 does not support cl_khr_fp64. ) 
 
         ./clinfo
         Found 2 platform(s).
