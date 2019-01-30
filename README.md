@@ -139,8 +139,8 @@ Now you can attach the serieal connection device to the USB port and access them
 
 6. The latest Lebian from Lemaker has delivered userspace binary driver for G72. By installing the pocl, two OpenCL platforms can be found on Hikey 970. (Notice that G72 does not support cl_khr_fp64. ) 
 
-./clinfo
-Found 2 platform(s).
+        ./clinfo
+        Found 2 platform(s).
 
         *******************0th platform******************************
         platform[0xcd5c490]: profile: FULL_PROFILE
