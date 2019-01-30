@@ -137,6 +137,131 @@ Now you can attach the serieal connection device to the USB port and access them
 
 2. It turns out the display overscan is caused by the compatibility of monitor with this board. It is solved by using another monitor. 
 
+6. The latest Lebian from Lemaker has delivered userspace binary driver for G72. By installing the pocl, two OpenCL platforms can be found on Hikey 970. (Notice that G72 does not support cl_khr_fp64. ) 
+
+./clinfo
+Found 2 platform(s).
+
+*******************0th platform******************************
+platform[0xcd5c490]: profile: FULL_PROFILE
+platform[0xcd5c490]: version: OpenCL 2.0 v1.r10p0-01rel0.e990c3e3ae25bde6c6a1b96097209d52
+platform[0xcd5c490]: name: ARM Platform
+platform[0xcd5c490]: vendor: ARM
+platform[0xcd5c490]: extensions: cl_khr_global_int32_base_atomics cl_khr_global_int32_extended_atomics cl_khr_local_int32_base_atomics cl_khr_local_int32_extended_atomics cl_khr_byte_addressable_store cl_khr_3d_image_writes cl_khr_int64_base_atomics cl_khr_int64_extended_atomics cl_khr_fp16 cl_khr_icd cl_khr_egl_image cl_khr_image2d_from_buffer cl_khr_depth_images cl_arm_core_id cl_arm_printf cl_arm_thread_limit_hint cl_arm_non_uniform_work_group_size cl_arm_import_memory cl_arm_shared_virtual_memory
+platform[0xcd5c490]: Found 1 device(s).
+
+------------------------0th device------------------------
+        device[0xcdbc7f0]: NAME: Mali-G72
+        device[0xcdbc7f0]: VENDOR: ARM
+        device[0xcdbc7f0]: PROFILE: FULL_PROFILE
+        device[0xcdbc7f0]: VERSION: OpenCL 2.0 v1.r10p0-01rel0.e990c3e3ae25bde6c6a1b96097209d52
+        device[0xcdbc7f0]: EXTENSIONS: cl_khr_global_int32_base_atomics cl_khr_global_int32_extended_atomics cl_khr_local_int32_base_atomics cl_khr_local_int32_extended_atomics cl_khr_byte_addressable_store cl_khr_3d_image_writes cl_khr_int64_base_atomics cl_khr_int64_extended_atomics cl_khr_fp16 cl_khr_icd cl_khr_egl_image cl_khr_image2d_from_buffer cl_khr_depth_images cl_arm_core_id cl_arm_printf cl_arm_thread_limit_hint cl_arm_non_uniform_work_group_size cl_arm_import_memory cl_arm_shared_virtual_memory
+        device[0xcdbc7f0]: DRIVER_VERSION: 2.0
+
+        device[0xcdbc7f0]: Type: GPU
+        device[0xcdbc7f0]: EXECUTION_CAPABILITIES: Kernel
+        device[0xcdbc7f0]: GLOBAL_MEM_CACHE_TYPE: Read-Write (2)
+        device[0xcdbc7f0]: CL_DEVICE_LOCAL_MEM_TYPE: Global (2)
+        device[0xcdbc7f0]: SINGLE_FP_CONFIG: 0x3f
+        device[0xcdbc7f0]: QUEUE_PROPERTIES: 0x3
+
+        device[0xcdbc7f0]: VENDOR_ID: 1646329857
+        device[0xcdbc7f0]: MAX_COMPUTE_UNITS: 12
+        device[0xcdbc7f0]: MAX_WORK_ITEM_DIMENSIONS: 3
+        device[0xcdbc7f0]: MAX_WORK_GROUP_SIZE: 384
+        device[0xcdbc7f0]: PREFERRED_VECTOR_WIDTH_CHAR: 16
+        device[0xcdbc7f0]: PREFERRED_VECTOR_WIDTH_SHORT: 8
+        device[0xcdbc7f0]: PREFERRED_VECTOR_WIDTH_INT: 4
+        device[0xcdbc7f0]: PREFERRED_VECTOR_WIDTH_LONG: 2
+        device[0xcdbc7f0]: PREFERRED_VECTOR_WIDTH_FLOAT: 4
+        device[0xcdbc7f0]: PREFERRED_VECTOR_WIDTH_DOUBLE: 0
+        device[0xcdbc7f0]: MAX_CLOCK_FREQUENCY: 767
+        device[0xcdbc7f0]: ADDRESS_BITS: 64
+        device[0xcdbc7f0]: MAX_MEM_ALLOC_SIZE: 1073741824
+        device[0xcdbc7f0]: IMAGE_SUPPORT: 1
+        device[0xcdbc7f0]: MAX_READ_IMAGE_ARGS: 128
+        device[0xcdbc7f0]: MAX_WRITE_IMAGE_ARGS: 64
+        device[0xcdbc7f0]: IMAGE2D_MAX_WIDTH: 65536
+        device[0xcdbc7f0]: IMAGE2D_MAX_HEIGHT: 65536
+        device[0xcdbc7f0]: IMAGE3D_MAX_WIDTH: 65536
+        device[0xcdbc7f0]: IMAGE3D_MAX_HEIGHT: 65536
+        device[0xcdbc7f0]: IMAGE3D_MAX_DEPTH: 65536
+        device[0xcdbc7f0]: MAX_SAMPLERS: 16
+        device[0xcdbc7f0]: MAX_PARAMETER_SIZE: 1024
+        device[0xcdbc7f0]: MEM_BASE_ADDR_ALIGN: 1024
+        device[0xcdbc7f0]: MIN_DATA_TYPE_ALIGN_SIZE: 128
+        device[0xcdbc7f0]: GLOBAL_MEM_CACHELINE_SIZE: 64
+        device[0xcdbc7f0]: GLOBAL_MEM_CACHE_SIZE: 524288
+        device[0xcdbc7f0]: GLOBAL_MEM_SIZE: 4294967296
+        device[0xcdbc7f0]: MAX_CONSTANT_BUFFER_SIZE: 65536
+        device[0xcdbc7f0]: MAX_CONSTANT_ARGS: 8
+        device[0xcdbc7f0]: LOCAL_MEM_SIZE: 32768
+        device[0xcdbc7f0]: ERROR_CORRECTION_SUPPORT: 0
+        device[0xcdbc7f0]: PROFILING_TIMER_RESOLUTION: 1000
+        device[0xcdbc7f0]: ENDIAN_LITTLE: 1
+        device[0xcdbc7f0]: AVAILABLE: 1
+        device[0xcdbc7f0]: COMPILER_AVAILABLE: 1
+
+*******************1th platform******************************
+platform[0xffffaa0e7398]: profile: FULL_PROFILE
+platform[0xffffaa0e7398]: version: OpenCL 1.2 pocl 1.2 RelWithDebInfo, LLVM 7.0.1, SLEEF, POCL_DEBUG, FP16
+platform[0xffffaa0e7398]: name: Portable Computing Language
+platform[0xffffaa0e7398]: vendor: The pocl project
+platform[0xffffaa0e7398]: extensions: cl_khr_icd
+platform[0xffffaa0e7398]: Found 1 device(s).
+
+------------------------0th device------------------------
+        device[0xcdbcaf0]: NAME: pthread-cortex-a53
+        device[0xcdbcaf0]: VENDOR: ARM
+        device[0xcdbcaf0]: PROFILE: FULL_PROFILE
+        device[0xcdbcaf0]: VERSION: OpenCL 1.2 pocl HSTR: pthread-aarch64--linux-gnueabihf-cortex-a53
+        device[0xcdbcaf0]: EXTENSIONS: cl_khr_byte_addressable_store cl_khr_global_int32_base_atomics   cl_khr_global_int32_extended_atomics cl_khr_local_int32_base_atomics cl_khr_local_int32_extended_atomics cl_khr_3d_image_writes cl_khr_fp16 cl_khr_fp64
+        device[0xcdbcaf0]: DRIVER_VERSION: 1.2
+
+        device[0xcdbcaf0]: Type: CPU
+        device[0xcdbcaf0]: EXECUTION_CAPABILITIES: Kernel Native
+        device[0xcdbcaf0]: GLOBAL_MEM_CACHE_TYPE: Read-Write (2)
+        device[0xcdbcaf0]: CL_DEVICE_LOCAL_MEM_TYPE: Global (2)
+        device[0xcdbcaf0]: SINGLE_FP_CONFIG: 0x6
+        device[0xcdbcaf0]: QUEUE_PROPERTIES: 0x2
+
+        device[0xcdbcaf0]: VENDOR_ID: 5045
+        device[0xcdbcaf0]: MAX_COMPUTE_UNITS: 8
+        device[0xcdbcaf0]: MAX_WORK_ITEM_DIMENSIONS: 3
+        device[0xcdbcaf0]: MAX_WORK_GROUP_SIZE: 4096
+        device[0xcdbcaf0]: PREFERRED_VECTOR_WIDTH_CHAR: 16
+        device[0xcdbcaf0]: PREFERRED_VECTOR_WIDTH_SHORT: 8
+        device[0xcdbcaf0]: PREFERRED_VECTOR_WIDTH_INT: 4
+        device[0xcdbcaf0]: PREFERRED_VECTOR_WIDTH_LONG: 2
+        device[0xcdbcaf0]: PREFERRED_VECTOR_WIDTH_FLOAT: 4
+        device[0xcdbcaf0]: PREFERRED_VECTOR_WIDTH_DOUBLE: 2
+        device[0xcdbcaf0]: MAX_CLOCK_FREQUENCY: 1844
+        device[0xcdbcaf0]: ADDRESS_BITS: 64
+        device[0xcdbcaf0]: MAX_MEM_ALLOC_SIZE: 2147483648
+        device[0xcdbcaf0]: IMAGE_SUPPORT: 1
+        device[0xcdbcaf0]: MAX_READ_IMAGE_ARGS: 128
+        device[0xcdbcaf0]: MAX_WRITE_IMAGE_ARGS: 128
+        device[0xcdbcaf0]: IMAGE2D_MAX_WIDTH: 8192
+        device[0xcdbcaf0]: IMAGE2D_MAX_HEIGHT: 8192
+        device[0xcdbcaf0]: IMAGE3D_MAX_WIDTH: 2048
+        device[0xcdbcaf0]: IMAGE3D_MAX_HEIGHT: 2048
+        device[0xcdbcaf0]: IMAGE3D_MAX_DEPTH: 2048
+        device[0xcdbcaf0]: MAX_SAMPLERS: 16
+        device[0xcdbcaf0]: MAX_PARAMETER_SIZE: 1024
+        device[0xcdbcaf0]: MEM_BASE_ADDR_ALIGN: 1024
+        device[0xcdbcaf0]: MIN_DATA_TYPE_ALIGN_SIZE: 128
+        device[0xcdbcaf0]: GLOBAL_MEM_CACHELINE_SIZE: 64
+        device[0xcdbcaf0]: GLOBAL_MEM_CACHE_SIZE: 1048576
+        device[0xcdbcaf0]: GLOBAL_MEM_SIZE: 4534318080
+        device[0xcdbcaf0]: MAX_CONSTANT_BUFFER_SIZE: 524288
+        device[0xcdbcaf0]: MAX_CONSTANT_ARGS: 8
+        device[0xcdbcaf0]: LOCAL_MEM_SIZE: 524288
+        device[0xcdbcaf0]: ERROR_CORRECTION_SUPPORT: 0
+        device[0xcdbcaf0]: PROFILING_TIMER_RESOLUTION: 1
+        device[0xcdbcaf0]: ENDIAN_LITTLE: 1
+        device[0xcdbcaf0]: AVAILABLE: 1
+        device[0xcdbcaf0]: COMPILER_AVAILABLE: 1
+
 7. Switching from Netplan to NetworkManager make it slightly better. Then you need to update the /etc/network/interface with following content:
 
         auto lo
