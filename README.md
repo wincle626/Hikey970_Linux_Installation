@@ -142,15 +142,15 @@ Now you can attach the serieal connection device to the USB port and access them
 ./clinfo
 Found 2 platform(s).
 
-*******************0th platform******************************
-platform[0xcd5c490]: profile: FULL_PROFILE
-platform[0xcd5c490]: version: OpenCL 2.0 v1.r10p0-01rel0.e990c3e3ae25bde6c6a1b96097209d52
-platform[0xcd5c490]: name: ARM Platform
-platform[0xcd5c490]: vendor: ARM
-platform[0xcd5c490]: extensions: cl_khr_global_int32_base_atomics cl_khr_global_int32_extended_atomics cl_khr_local_int32_base_atomics cl_khr_local_int32_extended_atomics cl_khr_byte_addressable_store cl_khr_3d_image_writes cl_khr_int64_base_atomics cl_khr_int64_extended_atomics cl_khr_fp16 cl_khr_icd cl_khr_egl_image cl_khr_image2d_from_buffer cl_khr_depth_images cl_arm_core_id cl_arm_printf cl_arm_thread_limit_hint cl_arm_non_uniform_work_group_size cl_arm_import_memory cl_arm_shared_virtual_memory
-platform[0xcd5c490]: Found 1 device(s).
+        *******************0th platform******************************
+        platform[0xcd5c490]: profile: FULL_PROFILE
+        platform[0xcd5c490]: version: OpenCL 2.0 v1.r10p0-01rel0.e990c3e3ae25bde6c6a1b96097209d52
+        platform[0xcd5c490]: name: ARM Platform
+        platform[0xcd5c490]: vendor: ARM
+        platform[0xcd5c490]: extensions: cl_khr_global_int32_base_atomics cl_khr_global_int32_extended_atomics cl_khr_local_int32_base_atomics cl_khr_local_int32_extended_atomics cl_khr_byte_addressable_store cl_khr_3d_image_writes cl_khr_int64_base_atomics cl_khr_int64_extended_atomics cl_khr_fp16 cl_khr_icd cl_khr_egl_image cl_khr_image2d_from_buffer cl_khr_depth_images cl_arm_core_id cl_arm_printf cl_arm_thread_limit_hint cl_arm_non_uniform_work_group_size cl_arm_import_memory cl_arm_shared_virtual_memory
+        platform[0xcd5c490]: Found 1 device(s).
 
-------------------------0th device------------------------
+        ------------------------0th device------------------------
         device[0xcdbc7f0]: NAME: Mali-G72
         device[0xcdbc7f0]: VENDOR: ARM
         device[0xcdbc7f0]: PROFILE: FULL_PROFILE
@@ -202,15 +202,15 @@ platform[0xcd5c490]: Found 1 device(s).
         device[0xcdbc7f0]: AVAILABLE: 1
         device[0xcdbc7f0]: COMPILER_AVAILABLE: 1
 
-*******************1th platform******************************
-platform[0xffffaa0e7398]: profile: FULL_PROFILE
-platform[0xffffaa0e7398]: version: OpenCL 1.2 pocl 1.2 RelWithDebInfo, LLVM 7.0.1, SLEEF, POCL_DEBUG, FP16
-platform[0xffffaa0e7398]: name: Portable Computing Language
-platform[0xffffaa0e7398]: vendor: The pocl project
-platform[0xffffaa0e7398]: extensions: cl_khr_icd
-platform[0xffffaa0e7398]: Found 1 device(s).
+        *******************1th platform******************************
+        platform[0xffffaa0e7398]: profile: FULL_PROFILE
+        platform[0xffffaa0e7398]: version: OpenCL 1.2 pocl 1.2 RelWithDebInfo, LLVM 7.0.1, SLEEF, POCL_DEBUG, FP16
+        platform[0xffffaa0e7398]: name: Portable Computing Language
+        platform[0xffffaa0e7398]: vendor: The pocl project
+        platform[0xffffaa0e7398]: extensions: cl_khr_icd
+        platform[0xffffaa0e7398]: Found 1 device(s).
 
-------------------------0th device------------------------
+        ------------------------0th device------------------------
         device[0xcdbcaf0]: NAME: pthread-cortex-a53
         device[0xcdbcaf0]: VENDOR: ARM
         device[0xcdbcaf0]: PROFILE: FULL_PROFILE
