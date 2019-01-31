@@ -133,9 +133,9 @@ Now you can attach the serieal connection device to the USB port and access them
 
 # Sovled Issues
 
-1.Use resize2fs command to expand the full partition size. Install GParted (sudo apt install gparted) and resize the rootfs parition.
+1.It turns out the display overscan is caused by the compatibility of monitor with this board. It is solved by using another monitor. 
 
-2.It turns out the display overscan is caused by the compatibility of monitor with this board. It is solved by using another monitor. 
+2.Use resize2fs command to expand the full partition size. Install GParted (sudo apt install gparted) and resize the rootfs parition.
 
 6.The latest Lebian from Lemaker has delivered userspace binary driver for G72. The binary library is /usr/lib/aarch64-linux-gnu/libmali.so. By installing the pocl, two OpenCL platforms can be found on Hikey 970. (Notice that Mali-G72 does not support cl_khr_fp64. ) 
 
