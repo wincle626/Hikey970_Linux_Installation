@@ -80,9 +80,10 @@ Please note that LeMaker has provided pre-built image for Hikey970. Please follo
 
 http://www.lemaker.org/product-hikey970-resource.html
 
-It seems I cannot access to LeMaker website for some reason. In case it disappeared, the link to Lebuntu is added.
+It seems I cannot access to LeMaker website for some reason. In case it disappeared, the link to pre-built image Lebuntu and Lebian are added.
 
-https://mega.nz/file/wTJkHb5R#AyaDuaFC4a-wdD9nVZ0jNS-b8mCMEvr0mg7FhWTba2s
+Lebuntu: https://mega.nz/file/wTJkHb5R#AyaDuaFC4a-wdD9nVZ0jNS-b8mCMEvr0mg7FhWTba2s
+Lebian: https://mega.nz/file/JW4GmKxR#DF6RhlFRwlKHB3n-KBONQDqugsJVdzxtLGH4E_YU8jo
 
 One of the drawback of this pre-compiled image is that some kernel modules are not preloaded at boot, for example the fdti_sio. In order to have those kernel modules after boot, you need to compile the kernel modules manually from the source. 
 
